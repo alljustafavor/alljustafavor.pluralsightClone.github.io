@@ -139,9 +139,25 @@ h6 {
 
 /* Showcase */
 
-#showcaase {
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
 
+#showcase .showcase-text {
+    font-size: 3rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+#showcase .secondary-btn{
+    width: 60%;
+    margin: auto;
 }
 
 
@@ -190,5 +206,12 @@ h6 {
 
     #right {
         flex: 6;
+    }
+}
+
+@media(max-width: 620px) {
+
+    #right {
+        display: none;
     }
 }
